@@ -87,7 +87,7 @@ input {
     margin: 8px 0;
     width: 100%;
 }
-
+/* 전체 컨테이너 */
 .container {
     background-color: #fff;
     border-radius: 10px;
@@ -97,7 +97,7 @@ input {
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 600px;
 }
 
 .form-container {
@@ -160,8 +160,8 @@ input {
 
 .overlay {
     background: #7f3ff6;
-    background: -webkit-linear-gradient(to right, #e5daf8, #bd8be8, #9762ea);
-    background: linear-gradient(to right, #d8c4fa, #bd8be8, #9762ea);
+    background: -webkit-linear-gradient(to right, #bd8be8, #9762ea);
+    background: linear-gradient(to right, #bd8be8, #9762ea);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
