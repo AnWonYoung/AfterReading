@@ -19,7 +19,7 @@ public class UserService {
 
         HashMap<String, String> params = new HashMap<String, String>();
         params.put("to", phoneNumber);    // 수신자
-        params.put("from", phoneNumber);    // 발신자 (테스트는 수신자로 우선 설정)
+        params.put("from", "01050601529");    // 발신자 (테스트는 수신자로 우선 설정)
         params.put("type", "SMS");
         params.put("text", "After Reading 회원가입 인증번호 : " + "["+cerNum+"]" + "-원영-");
         params.put("app_version", "test app 1.2");
@@ -34,19 +34,5 @@ public class UserService {
 
     }
 
-    public String sendSMS(String phoneNumber) {
-
-        Random rand  = new Random();
-        String numStr = "";
-        for(int i=0; i<4; i++) {
-            String ran = Integer.toString(rand.nextInt(10));
-            numStr+=ran;
-        }
-
-//        System.out.println("수신자 번호 : " + phoneNumber);
-//        System.out.println("인증번호 : " + numStr);
-        certifiedPhoneNumber(phoneNumber,numStr);
-        return numStr;
-    }
 
 }
